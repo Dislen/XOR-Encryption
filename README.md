@@ -2,7 +2,7 @@
 
 This program is takes a hard coded phrase and XORs each char with the given key '$' then prints the encrypted result.
 
-
+<pre>
 section .data
 
     user_msgOne db "This is the message pre-encryption", 0
@@ -75,5 +75,4 @@ print:  ; rsi (message), edx(length) regis must be pre-filled
     mov edi, 1
     syscall
     ret
-
-
+</pre>
